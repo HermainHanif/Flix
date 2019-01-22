@@ -15,6 +15,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 #### BONUS
 - [x] (2pt) User can view the app on various device sizes and orientations.
+  
   -> I did it on the iphone 8 where one can view it on portrait and landscape
 - [ ] (1pt) Run your app on a real device.
 
