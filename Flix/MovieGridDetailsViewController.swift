@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MovieGridDetailsViewController: UIViewController {
     
@@ -16,11 +17,13 @@ class MovieGridDetailsViewController: UIViewController {
     @IBOutlet weak var synopsisLabel: UILabel!
     
     var movie: [String: Any]!
+    var movieTitle: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        movieTitle = movie["title"] as? String
         titleLabel.text = movie["title"] as? String
         titleLabel.sizeToFit()
         
@@ -38,15 +41,25 @@ class MovieGridDetailsViewController: UIViewController {
         
     }
     
-
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let webdetailsViewContoller = segue.destination as! WebDetailsViewController
+        
+        if let movieTitle = movie["title"] as? String {
+            webdetailsViewContoller.movieTitle = movieTitle
+        }
+        
+        
+        
     }
-    */
+    
+    @IBAction func trailerButton(_ sender: Any) {
+        
+    }
+    
 
 }

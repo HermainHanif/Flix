@@ -259,6 +259,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJx-c8-WB1">
+                                <rect key="frame" x="55" y="405" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Trailer"/>
+                                <connections>
+                                    <action selector="trailerButton:" destination="9WN-P3-wCk" eventType="touchUpInside" id="4Re-zM-tQM"/>
+                                    <segue destination="1W8-Wl-zIR" kind="show" id="EV2-rj-L83"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="erA-fa-w8t"/>
@@ -273,6 +282,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hw7-cN-59c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1344.8" y="1103.2983508245877"/>
+        </scene>
+        <!--Web Details View Controller-->
+        <scene sceneID="Jqz-tB-erh">
+            <objects>
+                <viewController id="1W8-Wl-zIR" customClass="WebDetailsViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dm8-iN-24X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dcT-Zi-GCo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bqj-9p-asE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1344.8" y="1825.6371814092954"/>
         </scene>
     </scenes>
     <resources>

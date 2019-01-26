@@ -41,7 +41,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 
                 self.movies = dataDictionary["results"] as! [[String: Any]]
-                
+//                print(self.movies)
                 self.collectionView.reloadData()
                 //after get back data from internet tell collection view to update data and call functions
                 
